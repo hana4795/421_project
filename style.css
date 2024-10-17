@@ -1,0 +1,167 @@
+/*top-level positioning*/
+
+body {
+background-color: lightgrey;
+}
+
+header {
+	 position: fixed;          /* Keeps the header fixed at the top of the viewport */
+    top: 0;                   /* Aligns the header to the top of the viewport */
+    left: 0;                  /* Aligns the header to the left */
+    width: 100%;              /* Makes the header span the full width */
+    z-index: 1000;     
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  top: 120px;
+   width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*heading and other text styles*/
+
+.h1-header {
+	font-family: "Caveat", cursive;
+  font-size: 2em;
+  text-align: center
+}
+
+h2 {
+	font-family: "Merriweather Sans";
+  font-size: 1.5em;
+}
+
+
+/*nav styles*/
+
+
+nav ul {
+  list-style: none;
+  text-align: center
+  justify-content: center;
+	padding-left: 0px; 
+	background-color: white;
+	padding: 5px 0px 5px 0px;
+}
+
+nav ul li {
+	display: inline-block;  
+	font-family: "Roboto", sans-serif;	
+  margin: 0 20px;
+}
+
+nav a {
+  color: darkblue;
+  text-decoration: none;
+  padding: .5em 1em;
+}
+
+li.active a {
+	font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+ul li a:hover {
+  color: red; 
+}
+
+.module-block ul {
+  list-style: none;                     
+  padding: 0;
+  margin: 0;
+  display: grid;                  
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;              
+}
+
+.module-block ul li {
+  background-color: white;            
+  text-align: center;                  
+  border-radius: 8px;                   
+  padding: 10px 15px;                   
+  display: flex;                       
+  justify-content: center;             
+  align-items: center;             
+}
+
+.module-block ul li a {
+  text-decoration: none;            
+  color: #333;                    
+}
+
+.module-block ul li a:hover {
+  color: red;                     
+}
+
+
+/* Sidebar styling */
+.sidebar {
+  width: 200px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    font-family: "Roboto", sans-serif;
+}
+.research1 {
+  position: absolute;
+    top: 2110px;
+    left: 1030px;
+}
+.research2 {
+  position: absolute;
+    top: 4550px;
+    left: 1030px;
+}
+.research3 {
+  position: absolute;
+    top: 5130px;
+    left: 1030px;
+}
+.research4 {
+  position: absolute;
+    top: 6400px;
+    left: 1030px;
+}
+
+.data1 {
+  position: absolute;
+    top: 175px;
+    left: 1030px;
+}
+.data2 {
+  position: absolute;
+    top: 1000px;
+    left: 1030px;
+}
+.data3 {
+  position: absolute;
+    top: 2300px;
+    left: 1030px;
+}
+.data4 {
+  position: absolute;
+    top: 3900px;
+    left: 1030px;
+}
+
+/* Sidenav styling */
+
+.research-nav {
+   position: fixed;
+    top: 120px;
+    left: 5px;
+    width: 230px;
+    height: 75vh;
+    padding: 10px;
+    background-color: #f0f0f0;
+    overflow-y: auto;        /* Allows the sidebar's content to scroll vertically */
+    overflow-x: hidden;      /* Prevent horizontal scrolling */
+	font-family: "Roboto", sans-serif;
+}
