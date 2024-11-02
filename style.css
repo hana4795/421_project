@@ -18,31 +18,53 @@ header {
 
 main {
   position: relative;
-  top: 120px;
-   width: 720px;
+  width: 920px;
+  margin-top: 150px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 60px;
+  margin-bottom: 130px;
   font-family: "Roboto", sans-serif;
 }
 
+img {
+  width: 720px;    /* Set your desired width */
+  object-fit: cover; /* Ensures the image scales to fit */
+  display: flex;
+  justify-content: center; /* Horizontal centering */
+  align-items: center; 
+}
+
+figure {
+    border: 2px solid #ccc;       /* Border around the figure */
+    padding: 5px;                /* Padding inside the box */
+    width: 720px;
+    border-radius: 8px;           /* Rounded corners for the box */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+	justify-content: center; /* Horizontal centering */
+	align-items: center;
+}
 
 /*heading and other text styles*/
-
 .h1-header {
-	font-family: "Caveat", cursive;
-  font-size: 2em;
+ font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.5em;
   text-align: center
 }
 
 h2 {
-	font-family: "Merriweather Sans";
-  font-size: 1.5em;
+font-family: "Roboto", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h3 {
+text-decoration: underline;
 }
 
 
 /*nav styles*/
-
-
 nav ul {
   list-style: none;
   text-align: center
@@ -71,6 +93,23 @@ li.active a {
 ul li a:hover {
   color: red; 
 }
+
+/* Sidenav styling */
+.research-nav {
+  position: fixed;
+  top: 40%;           /* Percentage-based for responsiveness */
+  left: 0;
+  margin-left: -10px; /* Negative margin to adjust placement */
+  width: 230px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+
 
 .module-block ul {
   list-style: none;                     
@@ -103,65 +142,31 @@ ul li a:hover {
 
 /* Sidebar styling */
 .sidebar {
-  width: 200px;
-    padding: 5px 10px;
-    border-radius: 8px;
-    background-color: #f0f0f0;
-    font-family: "Roboto", sans-serif;
-}
-.research1 {
-  position: absolute;
-    top: 2110px;
-    left: 1030px;
-}
-.research2 {
-  position: absolute;
-    top: 4550px;
-    left: 1030px;
-}
-.research3 {
-  position: absolute;
-    top: 5130px;
-    left: 1030px;
-}
-.research4 {
-  position: absolute;
-    top: 6400px;
-    left: 1030px;
-}
-
-.data1 {
-  position: absolute;
-    top: 175px;
-    left: 1030px;
-}
-.data2 {
-  position: absolute;
-    top: 1000px;
-    left: 1030px;
-}
-.data3 {
-  position: absolute;
-    top: 2300px;
-    left: 1030px;
-}
-.data4 {
-  position: absolute;
-    top: 3900px;
-    left: 1030px;
-}
-
-/* Sidenav styling */
-
-.research-nav {
-   position: fixed;
-    top: 120px;
-    left: 5px;
-    width: 230px;
-    height: 75vh;
+    width: 360px;
+    margin: 0 10px;
+    float: right;
     padding: 10px;
+    border-radius: 10px;
     background-color: #f0f0f0;
-    overflow-y: auto;        /* Allows the sidebar's content to scroll vertically */
-    overflow-x: hidden;      /* Prevent horizontal scrolling */
-	font-family: "Roboto", sans-serif;
+    font-family: "Caveat Brush", cursive;
+  font-weight: 300;
+  font-size: 0.85em;
+  font-style: normal;
 }
+
+.case-study {
+  display: inline-block; /* Keeps the box tight to the text */
+  border: 2px dashed #333; /* Dashed border with custom color */
+  border-radius: 10px; /* Curved edges */
+  padding: 5px 10px; /* Minimal padding to keep it tight to the content */
+  margin: 0; /* Optional: Remove extra space outside the box */
+}
+  
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    clear: both;
+}
+  
